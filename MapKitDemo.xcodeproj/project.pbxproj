@@ -14,6 +14,10 @@
 		0921754D1EB03C96003521EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0921754B1EB03C96003521EF /* LaunchScreen.storyboard */; };
 		092175581EB03C96003521EF /* MapKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092175571EB03C96003521EF /* MapKitDemoTests.swift */; };
 		092175631EB03C96003521EF /* MapKitDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092175621EB03C96003521EF /* MapKitDemoUITests.swift */; };
+		09729DBE1EB19053007C532C /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09729DBD1EB19053007C532C /* JSON.swift */; };
+		09729DC01EB19266007C532C /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09729DBF1EB19266007C532C /* Artwork.swift */; };
+		09729DC21EB19ACD007C532C /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09729DC11EB19ACD007C532C /* VCMapView.swift */; };
+		09729DC61EB1CEEF007C532C /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = 09729DC51EB1CEEF007C532C /* PublicArt.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		0921755E1EB03C96003521EF /* MapKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		092175621EB03C96003521EF /* MapKitDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitDemoUITests.swift; sourceTree = "<group>"; };
 		092175641EB03C96003521EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09729DBD1EB19053007C532C /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		09729DBF1EB19266007C532C /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		09729DC11EB19ACD007C532C /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
+		09729DC51EB1CEEF007C532C /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 			children = (
 				092175421EB03C96003521EF /* AppDelegate.swift */,
 				092175441EB03C96003521EF /* ViewController.swift */,
+				09729DC51EB1CEEF007C532C /* PublicArt.json */,
+				09729DC11EB19ACD007C532C /* VCMapView.swift */,
+				09729DBF1EB19266007C532C /* Artwork.swift */,
+				09729DBD1EB19053007C532C /* JSON.swift */,
 				092175461EB03C96003521EF /* Main.storyboard */,
 				092175491EB03C96003521EF /* Assets.xcassets */,
 				0921754B1EB03C96003521EF /* LaunchScreen.storyboard */,
@@ -193,7 +205,7 @@
 				TargetAttributes = {
 					0921753E1EB03C96003521EF = {
 						CreatedOnToolsVersion = 8.3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					092175521EB03C96003521EF = {
 						CreatedOnToolsVersion = 8.3;
@@ -232,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09729DC61EB1CEEF007C532C /* PublicArt.json in Resources */,
 				0921754D1EB03C96003521EF /* LaunchScreen.storyboard in Resources */,
 				0921754A1EB03C96003521EF /* Assets.xcassets in Resources */,
 				092175481EB03C96003521EF /* Main.storyboard in Resources */,
@@ -259,7 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09729DBE1EB19053007C532C /* JSON.swift in Sources */,
 				092175451EB03C96003521EF /* ViewController.swift in Sources */,
+				09729DC21EB19ACD007C532C /* VCMapView.swift in Sources */,
+				09729DC01EB19266007C532C /* Artwork.swift in Sources */,
 				092175431EB03C96003521EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,10 +430,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MapKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WLF.MapKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -426,10 +444,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MapKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WLF.MapKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -507,6 +527,7 @@
 				092175691EB03C96003521EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0921756A1EB03C96003521EF /* Build configuration list for PBXNativeTarget "MapKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +536,7 @@
 				0921756C1EB03C96003521EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0921756D1EB03C96003521EF /* Build configuration list for PBXNativeTarget "MapKitDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +545,7 @@
 				0921756F1EB03C96003521EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
